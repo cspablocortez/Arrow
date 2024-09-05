@@ -1,7 +1,12 @@
 # Arrow
 
-Arrow is a terminal-based content management system 
-built on [wruby](https://git.sr.ht/~bt/wruby).
+<p style="background: #ddd; padding: 0.5rem">
+  <em>Arrow is currently in development and should not be used in production environments.</em>
+</p>
+
+Arrow is a minimal static site generator and a content management 
+system for independently managed websites, 
+favoring simplicity and readability.
 
 ## Features
 
@@ -16,7 +21,8 @@ Plus:
 
 * An easy-to-use CMS for writer happiness.
 
-Read more at the official Github [repository](https://github.com/cspablocortez/Arrow).
+Learn more on the [about page](/about) or checkout the
+official Github [repository](https://github.com/cspablocortez/Arrow).
 
 ## Latest Posts
 

@@ -12,6 +12,10 @@
 
 ## 2024-09-05
 
+(12:02) Will come back to Kramdown approach. Maybe there is
+an easier alternative. Currently every markdown file
+gets converted to a corresponding HTML file. 
+
 (08:04) Should disable posts since links are currently 
 broken.
 

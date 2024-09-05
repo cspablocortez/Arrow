@@ -6,13 +6,13 @@
 	<meta name="color-scheme" content="dark light">
 	<link rel="icon" href="data:,">
 	<title>Devlog</title>
-	<link href="/index.rss" type="application/rss+xml" rel="alternate" title="RSS feed for blog posts" />
+	<link href="https://cspablocortez.github.io/Arrow/index.rss" type="application/rss+xml" rel="alternate" title="RSS feed for blog posts" />
 <style>*{box-sizing:border-box;}body{font-family:sans-serif;line-height:1.33;margin:0
 auto;max-width:650px;padding:1rem;}blockquote {border-left: 2px solid #8b8b8b;padding-left: 0.5rem;}img{max-width:100%;}pre{border:1px solid;overflow:auto;padding:5px;}table{text-align:left;width:100%;}.posts,#menu{list-style:none;padding:0;}.posts li{margin-bottom:8px;}.posts li span{display:block;font-size:90%;}#menu li{display:inline-block;margin-right:8px;}.footnotes{font-size:90%;} 
 </style>
 </head>
 
-<nav id="top">
+<nav id="top" style="text-align: end;">
 	<a href="https://cspablocortez.github.io/Arrow">Home</a><span>&nbsp;|&nbsp;</span><a href="#menu">Menu &darr;</a>
 </nav>
 
@@ -30,7 +30,48 @@ auto;max-width:650px;padding:1rem;}blockquote {border-left: 2px solid #8b8b8b;pa
   the history of a project by telling a story from the developer's perspective.</p>
 </div>
 
-<h2 id="section">2024-09-04</h2>
+<h2 id="section">2024-09-05</h2>
+
+<p>(07:23) Not necessarily <em>coding</em>, but I spent the past hours writing a blog post
+about wruby and the shortcomings of Jekyll. Arrow needs to be as simple a website
+as possible while introducing a newcomer to the indieweb to important concepts,
+from beginning web development in HTML and CSS to generating RSS feeds.</p>
+
+<p>It won’t provide configuration beyond metadata, but it will be readily configurable
+by nature, since it will be mostly static files.</p>
+
+<ul>
+  <li>external CSS file</li>
+  <li>minimal yet opinionanted HTML structure</li>
+  <li>CMS that prioritizes writing over file tinkering</li>
+</ul>
+
+<h2 id="section-1">2024-09-04</h2>
+
+<p>(23:54) Next on the todo list is fixing broken links. I think this will require a substantive 
+rewrite. I’m going to use wruby as a template, but more likely than not the whole thing will
+have to be rewritten. Take a look at this function:</p>
+
+<pre><code class="language-ruby">def generate_full_posts_list(posts, header_content, footer_content, posts_index_file, output_dir, posts_dir)
+  posts_index_content = File.read(posts_index_file)
+  posts_title = extract_title_from_md(posts_index_content.lines)
+  posts_html = Kramdown::Document.new(posts_index_content).to_html
+
+  header = replace_title_placeholder(header_content, posts_title)
+
+  list_content = header + posts_html + "&lt;ul class=\"posts\"&gt;\n"
+  posts.each { |post| list_content &lt;&lt; "&lt;li&gt;&lt;span&gt;#{post[:date]}&lt;/span&gt;&lt;a href='/#{posts_dir}/#{post[:link]}'&gt;#{post[:title]}&lt;/a&gt;&lt;/li&gt;\n" }
+  list_content &lt;&lt; "&lt;/ul&gt;\n" + footer_content
+
+  File.write("#{output_dir}/posts/index.html", list_content)
+end
+</code></pre>
+
+<p>There’s no need to have this many parameters if we create a smart architecture for 
+the app. I will use it as a starting point, but I think I’ll benefit from checking
+out my old code from the Sinatra static site generator I built earlier this year.</p>
+
+<hr />
 
 <p>(22:38) Created a <code>Rakefile</code> to ensure compatibility on Windows.</p>
 
@@ -108,7 +149,7 @@ separate branches. Not currently a priority as I haven’t deployed at all.</p>
 <footer role="contentinfo">
     <h2>Menu Navigation</h2>
     <ul id="menu">
-        <li><a href="/">Home</a></li>
+        <li><a href="https://cspablocortez.github.io/Arrow/">Home</a></li>
         <li><a href="https://cspablocortez.github.io/Arrow/posts">Posts</a></li>
         <li><a href="https://cspablocortez.github.io/Arrow/about">About</a></li>
         <li><a href="https://cspablocortez.github.io/Arrow/devlog">Devlog</a></li>

@@ -8,7 +8,7 @@
     <title>Arrow RSS Feed</title>
     <link>https://cspablocortez.github.io/Arrow</link>
     <description>The official RSS Feed for https://cspablocortez.github.io/Arrow</description>
-    <pubDate>Wed, 04 Sep 2024 23:44:09 -0700</pubDate>
+    <pubDate>Thu, 05 Sep 2024 07:35:21 -0700</pubDate>
     <item>
       <title>How to Deploy to Github Pages</title>
       <link>https://cspablocortez.github.io/Arrow/posts/github-pages-deployment/</link>
@@ -294,6 +294,6 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
       <pubDate>Wed, 04 Sep 2024 12:00:00 -0700</pubDate>
       <dc:date>2024-09-04T12:00:00-07:00</dc:date>
     </item>
-    <dc:date>2024-09-04T23:44:09-07:00</dc:date>
+    <dc:date>2024-09-05T07:35:21-07:00</dc:date>
   </channel>
 </rss>

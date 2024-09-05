@@ -1,17 +1,22 @@
-# wruby
+# Arrow
 
-**wruby is a single file, minimal site generator written in Ruby.** (*Not* the ruby gem)
-
-The "w" is silent...
+Arrow is a terminal-based content management system 
+built on [wruby](https://git.sr.ht/~bt/wruby).
 
 ## Features
+
+All the features of **wruby**:
 
 * Fast, OS-agnostic site generator
 * Auto-generated, valid [RSS feed](/index.rss)
 * Custom `header.html` and `footer.html` templates
 * Not much else (this is a *good* thing!)
 
-You can learn more by reading [the official README](https://git.sr.ht/~bt/wruby).
+Plus:
+
+* An easy-to-use CMS for writer happiness.
+
+Read more at the official Github [repository](https://github.com/cspablocortez/Arrow).
 
 ## Latest Posts
 

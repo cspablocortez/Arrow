@@ -11,11 +11,12 @@ clean:
 	rm -rf build/*
 
 publish: build
-	git checkout gh-pages
+	git switch gh-pages
 	find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
-	mv build/* .
+	cp -r build/* .
+	rm -r build
 	git add .
-	git commit -m "Automated deployment"
+	git commit -m "Automated deployment."
 	git push origin gh-pages
 	git switch main
 

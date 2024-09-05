@@ -12,13 +12,20 @@
 
 ## 2024-09-05
 
-(07:23) Not necessarily *coding*, but I spent the past hours writing a blog post
-about wruby and the shortcomings of Jekyll. Arrow needs to be as simple a website
-as possible while introducing a newcomer to the indieweb to important concepts,
-from beginning web development in HTML and CSS to generating RSS feeds.
+(07:49) Can't forget to add support for other github pages
+projects. That way it's easy to spin more Arrow-built 
+projects.
 
-It won't provide configuration beyond metadata, but it will be readily configurable
-by nature, since it will be mostly static files.
+(07:23) Not necessarily *coding*, but I spent the past hours 
+writing a blog post about wruby and the shortcomings of 
+Jekyll. Arrow needs to be as simple a website as possible 
+while introducing a newcomer to the indieweb to important 
+concepts, from beginning web development in HTML and CSS to 
+generating RSS feeds.
+
+It won't provide configuration beyond metadata, but it will 
+be readily configurable by nature, since it will be mostly 
+static files.
 
 - external CSS file
 - minimal yet opinionanted HTML structure

@@ -1,17 +1,17 @@
 # Arrow
 
-<p style="background: #ddd; padding: 1rem; text-align: center;">
+<p style="background: #ddd; padding: 1rem; text-align: center; color: black;">
   <em>Arrow is currently in development and should not be used in production environments.</em>
 </p>
 
 Arrow is a minimal static site generator and a content management 
 system for independent websites.
 
+> The focus is on writing, not website maintenance.
+
 It’s ideal for people who want to own their content but 
 don’t want to dedicate too much time to maintaining a website or blog. 
 
-
-> The focus is on writing, not website maintenance.
 
 ## Features
 

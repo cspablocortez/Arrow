@@ -34,11 +34,11 @@ task :publish do
 
   # Commit and push changes to GitHub Pages
   sh 'git add .'
-  sh 'git commit -m "Automated deployment."'
+  sh 'git commit -m "Automated deployment via rake."'
   sh 'git push origin gh-pages'
   sh 'git switch main'
   
-  puts "Deployment to GitHub Pages is complete!"
+  puts "Deployment to GitHub Pages with rake task 'publish' is complete!"
 end
 
 task :default => :build

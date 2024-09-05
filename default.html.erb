@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= page_title %></title>
+  <style>*{box-sizing:border-box;}body{font-family:sans-serif;line-height:1.33;margin:0
+auto;max-width:650px;padding:1rem;}blockquote {border-left: 2px solid #8b8b8b;padding-left: 0.5rem;}img{max-width:100%;}pre{border:1px solid;overflow:auto;padding:5px;}table{text-align:left;width:100%;}.posts,#menu{list-style:none;padding:0;}.posts li{margin-bottom:8px;}.posts li span{display:block;font-size:90%;}#menu li{display:inline-block;margin-right:8px;}.footnotes{font-size:90%;} 
+</style>
+</head>
+<body>
+
+  <nav id="top" style="text-align: end;">
+    <a href="https://cspablocortez.github.io/Arrow">Home</a><span>&nbsp;|&nbsp;</span><a href="#menu">Menu &darr;</a>
+  </nav>
+  <main>
+    <%= content %>
+  </main>
+
+  <hr>
+  
+  <footer role="contentinfo">
+    <h2>Menu Navigation</h2>
+    <ul id="menu">
+        <li><a href="https://cspablocortez.github.io/Arrow/">Home</a></li>
+        <li><a href="https://cspablocortez.github.io/Arrow/posts">Posts</a></li>
+        <li><a href="https://cspablocortez.github.io/Arrow/about">About</a></li>
+        <li><a href="https://cspablocortez.github.io/Arrow/devlog">Devlog</a></li>
+        <li><a href="https://cspablocortez.github.io/Arrow/index.rss">RSS</a></li>
+        <li><a href="#top">&uarr; Top of the page</a></li>
+    </ul>
+    <small>
+        Built with <a href="https://cspablocortez.github.io/Arrow">Arrow</a>. <br>
+        The <a href="https://github.com/cspablocortez/Arrow">code for this project</a>
+        is <a href="https://mit-license.org">MIT</a>.
+    </small>
+  </footer>
+
+</body>
+</html>

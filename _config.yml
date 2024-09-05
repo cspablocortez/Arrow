@@ -1,6 +1,6 @@
-site_url: 'https://wruby.btxx.org'
-site_name: 'wruby'
-author_name: 'Bradley Taunt'
+site_url: 'https://cspablocortez.github.io/Arrow'
+site_name: 'Arrow'
+author_name: 'Pablo E. Cortez'
 
 directories:
   posts: 'posts'

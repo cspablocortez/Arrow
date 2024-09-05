@@ -41,4 +41,4 @@ task :publish do
   puts "Deployment to GitHub Pages with rake task 'publish' is complete!"
 end
 
-task :default => :build
+task :default => :serve

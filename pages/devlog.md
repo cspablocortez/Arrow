@@ -1,57 +1,75 @@
 # Devlog
 
-2024-09-04
+<div style="background: #ddd; padding: 1rem">
 
-[21:10] This page is now live on Github at 
-<https://cspablocortez.github.io/Arrow/about>.
+  <p>This is the development log (<em>devlog</em>) of Arrow. 
+  I like keeping a log of my impressions 
+  regarding different technologies as I work on software projects.</p>
+
+  <p>This is not part of Arrow's documentation. Instead, devlogs capture 
+  the history of a project by telling a story from teh developer's perspective.</p>
+</div>
+
+
+## 2024-09-04
+
+
+(21:17) By default, wruby parses code blocks surrounded by tildes 
+since it relies on pandoc. I've become accustomed to the Jekyll
+backticks, will return to this.
+
+---
+
+(21:10) This page is now [live on Github](https://cspablocortez.github.io/Arrow/devlog).
 
 I'll be going over some of the required steps I took to get this working.
 
-1. First I had to create a `gh-pages` branch on my repository.
+**First I had to create a `gh-pages` branch on my repository.**
 
-```sh
+~~~sh
 $ git checkout --orphan gh-pages
-```
+~~~
 
 The `--orphan` flag in the command above disconnects the newly created branch
 from the previous repository history.
 
-2. Then I tracked the `build` folder on this branch.
+**Then I tracked the `build` folder on this branch.**
 
-```sh
+~~~sh
 $ git add -f build/
-```
+~~~
 
 The `-f` option forces tracking even though the directory is in my `.gitignore` file.
 
 
-3. Commit and push changes
+**Lastly, commit and push changes**
 
-```sh
+~~~sh
 $ git commit -m "Add build directory to repository"
-```
+~~~
 
-```sh
+~~~sh
 $ git push origin gh-pages
-```
+~~~
 
 The site is currently deployed successfully. If the site is under a 
-project repository, like it is for me (I'm publishing this 
-on https://cspablocortez.github.io/Arrow), then the base url will be broken.
+project page, like it is for me (I'm publishing this 
+on [https://cspablocortez.github.io/Arrow](https://cspablocortez.github.io/Arrow)), then the base url will be broken.
 
-Will come back to that.
-
---- 
-
-[20:43] I'm now preparing the site for a Github Pages deployment.
+Since I have a few projects currently hosted via Github Pages,
+I will have to come back to fix this.
 
 --- 
 
-[20:32] Linking devlog to home page.
+(20:43) I'm now preparing the site for a Github Pages deployment.
+
+--- 
+
+(20:32) Linking devlog to home page.
 
 ---
 
-[20:30] I'm reading up on Github Pages deployment, currently 
+(20:30) I'm reading up on Github Pages deployment, currently 
 thinking of deploying
 this project off the `build` directory all from the main branch. 
 

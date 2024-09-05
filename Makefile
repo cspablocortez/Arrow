@@ -12,6 +12,7 @@ clean:
 
 publish: build
 	git checkout gh-pages
+	find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
 	mv build/* .
 	git add .
 	git commit -m "Automated deployment"

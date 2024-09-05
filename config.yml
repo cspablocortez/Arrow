@@ -1,0 +1,19 @@
+site:
+  title: 'Arrow'
+  url: 'https://cspablocortez.github.io'
+  subpath: '/Arrow'
+
+navigation:
+  - text: "Home"
+    url: "/"
+  - text: "Posts"
+    url: "posts/"
+  - text: "About"
+    url: "about/"
+  - text: "Devlog"
+    url: "devlog/"
+  - text: "RSS"
+    url: "index.rss"
+  - text: "Top of the page"
+    url: "#top"
+    symbol: "&uarr;"

@@ -25,10 +25,6 @@ Plus:
 
 ## Getting Started
 
-The purpose of Arrow is to make Markdown-based websites 
-easy to create and manage. The default styles and layout
-favor readability.
-
 Make your changes in the main configuration file `_config.yml` file 
 (site URL, your name, description). 
 

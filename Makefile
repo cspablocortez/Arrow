@@ -10,7 +10,7 @@ serve: build
 clean:
 	rm -rf build/*
 
-publish: build
+publish: 
 	git switch gh-pages
 	find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
 	cp -r build/* .

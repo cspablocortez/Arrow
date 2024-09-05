@@ -1,23 +1,41 @@
-# wruby
+# Arrow
 
-> This is a heavy work-in-progress and I am hardly a Ruby expert.
-> Please consider contributing to make the project better!
+## Introduction
 
-Minimal blog and static site generator. The "w" is silent...
+Arrow is a terminal-based content management system 
+built on [wruby](https://git.sr.ht/~bt/wruby).
+
+### Features
+
+All the features of **wruby**:
+
+* Fast, OS-agnostic site generator
+* Markdown support
+* Auto-generated, valid [RSS feed](/index.rss)
+* Custom `header.html` and `footer.html` templates
+
+Plus:
+
+* An easy-to-use CMS for writer happiness.
+
 
 ## Dependencies
 
-- ruby
+- Ruby
 
 ## Getting Started
 
-Make your changes in the main configuration file `_config.yml` file (site URL, your name,
-etc.). Remove the `.build.yml` unless you plan to host with sourcehut pages,
-otherwise edit this file with your own details.
+The purpose of Arrow is to make Markdown-based websites 
+easy to create and manage. The default styles and layout
+favor readability.
+
+Make your changes in the main configuration file `_config.yml` file 
+(site URL, your name, description). 
 
 * Blog posts go under the `posts` directory as markdown files
   - Posts need to be structured with an `h1` on the first line, a space on the
-    second, and the date on the third line (ie. 2024-07-20)
+    second, and the date on the third line (e.g., 2024-09-04).
+
 * Pages go under the `pages` directory as markdown files
 * Media (images, videos etc) go in the root `public` directory
 

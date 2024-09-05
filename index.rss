@@ -5,13 +5,13 @@
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
-    <title>wruby RSS Feed</title>
-    <link>https://wruby.btxx.org</link>
-    <description>The official RSS Feed for https://wruby.btxx.org</description>
-    <pubDate>Wed, 04 Sep 2024 22:36:58 -0700</pubDate>
+    <title>Arrow RSS Feed</title>
+    <link>https://cspablocortez.github.io/Arrow</link>
+    <description>The official RSS Feed for https://cspablocortez.github.io/Arrow</description>
+    <pubDate>Wed, 04 Sep 2024 23:02:37 -0700</pubDate>
     <item>
       <title>How to Deploy to Github Pages</title>
-      <link>https://wruby.btxx.org/posts/github-pages-deployment/</link>
+      <link>https://cspablocortez.github.io/Arrow/posts/github-pages-deployment/</link>
       <description>&lt;h1 id=&quot;how-to-deploy-to-github-pages&quot;&gt;How to Deploy to Github Pages&lt;/h1&gt;
 
 &lt;p&gt;2024-09-04&lt;/p&gt;
@@ -98,7 +98,7 @@ you should be able to see your site at the address logged on the terminal.&lt;/p
     </item>
     <item>
       <title>Markdown Examples in Arrow</title>
-      <link>https://wruby.btxx.org/posts/markdown-examples/</link>
+      <link>https://cspablocortez.github.io/Arrow/posts/markdown-examples/</link>
       <description>&lt;h1 id=&quot;markdown-examples-in-arrow&quot;&gt;Markdown Examples in Arrow&lt;/h1&gt;
 
 &lt;p&gt;2024-09-04&lt;/p&gt;
@@ -294,6 +294,6 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
       <pubDate>Wed, 04 Sep 2024 12:00:00 -0700</pubDate>
       <dc:date>2024-09-04T12:00:00-07:00</dc:date>
     </item>
-    <dc:date>2024-09-04T22:36:58-07:00</dc:date>
+    <dc:date>2024-09-04T23:02:37-07:00</dc:date>
   </channel>
 </rss>

@@ -13,6 +13,32 @@
 
 ## 2024-09-04
 
+(23:54) Next on the todo list is fixing broken links. I think this will require a substantive 
+rewrite. I'm going to use wruby as a template, but more likely than not the whole thing will
+have to be rewritten. Take a look at this function:
+
+~~~ruby
+def generate_full_posts_list(posts, header_content, footer_content, posts_index_file, output_dir, posts_dir)
+  posts_index_content = File.read(posts_index_file)
+  posts_title = extract_title_from_md(posts_index_content.lines)
+  posts_html = Kramdown::Document.new(posts_index_content).to_html
+
+  header = replace_title_placeholder(header_content, posts_title)
+
+  list_content = header + posts_html + "<ul class=\"posts\">\n"
+  posts.each { |post| list_content << "<li><span>#{post[:date]}</span><a href='/#{posts_dir}/#{post[:link]}'>#{post[:title]}</a></li>\n" }
+  list_content << "</ul>\n" + footer_content
+
+  File.write("#{output_dir}/posts/index.html", list_content)
+end
+~~~
+
+There's no need to have this many parameters if we create a smart architecture for 
+the app. I will use it as a starting point, but I think I'll benefit from checking
+out my old code from the Sinatra static site generator I built earlier this year.
+
+---
+
 (22:38) Created a `Rakefile` to ensure compatibility on Windows.
 
 ---

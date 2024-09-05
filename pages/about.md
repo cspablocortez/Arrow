@@ -8,7 +8,7 @@
 Arrow is a minimal static site generator and a content management 
 system for independent websites.
 
-It’s ideal for tech-savvy people who want to own their content but 
+It’s ideal for people who want to own their content but 
 don’t want to dedicate too much time to maintaining a website or blog. 
 
 Arrow assumes familiarity with the terminal, git, and markdown.

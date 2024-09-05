@@ -32,28 +32,28 @@ auto;max-width:650px;padding:1rem;}blockquote {border-left: 2px solid #8b8b8b;pa
 and create a ready-for-deployment folder of your 
 website by running the following command.</p>
 
-<pre><code class="language-sh">$ make build
+<pre><code class="language-sh">$ rake build
 </code></pre>
 
-<p>This will create a folder called <code>build/</code> in your root folder.</p>
+<p>This will create a folder called <code>build/</code> in your root folder.
+Since <code>build</code> is the default task in your <code>Rakefile</code>, running
+<code>rake</code> alone will build your site,</p>
 
-<p>To see your site on a local server before deployment, you can 
-also run:</p>
+<p>To see your site on a local server before deployment, run:</p>
 
-<pre><code class="language-sh">$ make serve
+<pre><code class="language-sh">$ rake serve
 </code></pre>
 
 <p>This command will build the project and start a local server
 using Python’s <code>http-server</code>, which uses port 8000 by default.</p>
 
-<p>You can see a local copy of your project by visiting to
-<a href="http://localhost:8000">http://localhost:8000</a> with your web browser.</p>
+<p>You can see a local copy of your project by visiting <a href="http://localhost:8000">http://localhost:8000</a> with your web browser.</p>
 
 <p>You should see something like this:</p>
 
-<p><img src="/public/images/deployment1.png" alt="Screenshot of local server running" title="Screenshot of local server running." /></p>
+<p><img src="/Arrow/public/images/deployment1.png" alt="Screenshot of local server running" title="Screenshot of local server running." /></p>
 
-<h2 id="deployment">Deployment</h2>
+<h2 id="deployment-for-the-first-time">Deployment for the First Time</h2>
 
 <p>If the website looks good and you are ready to deploy to 
 Github Pages, follow these steps.</p>
@@ -88,7 +88,7 @@ from the previous repository history.</p>
 
 <p>The previous process applies only to the first time you wish to publish.</p>
 
-<p>For subsequent changes, simply run the <code>make publish</code> command from the terminal.</p>
+<p>For subsequent changes, simply run the <code>rake publish</code> command from the terminal.</p>
 
 <p>If all went well, you should see a message on the terminal that shows the 
 project was deployed successfully.</p>

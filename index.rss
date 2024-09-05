@@ -8,7 +8,7 @@
     <title>Arrow RSS Feed</title>
     <link>https://cspablocortez.github.io/Arrow</link>
     <description>The official RSS Feed for https://cspablocortez.github.io/Arrow</description>
-    <pubDate>Wed, 04 Sep 2024 23:25:06 -0700</pubDate>
+    <pubDate>Wed, 04 Sep 2024 23:44:09 -0700</pubDate>
     <item>
       <title>How to Deploy to Github Pages</title>
       <link>https://cspablocortez.github.io/Arrow/posts/github-pages-deployment/</link>
@@ -26,28 +26,28 @@
 and create a ready-for-deployment folder of your 
 website by running the following command.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ make build
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ rake build
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This will create a folder called &lt;code&gt;build/&lt;/code&gt; in your root folder.&lt;/p&gt;
+&lt;p&gt;This will create a folder called &lt;code&gt;build/&lt;/code&gt; in your root folder.
+Since &lt;code&gt;build&lt;/code&gt; is the default task in your &lt;code&gt;Rakefile&lt;/code&gt;, running
+&lt;code&gt;rake&lt;/code&gt; alone will build your site,&lt;/p&gt;
 
-&lt;p&gt;To see your site on a local server before deployment, you can 
-also run:&lt;/p&gt;
+&lt;p&gt;To see your site on a local server before deployment, run:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ make serve
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ rake serve
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This command will build the project and start a local server
 using Python’s &lt;code&gt;http-server&lt;/code&gt;, which uses port 8000 by default.&lt;/p&gt;
 
-&lt;p&gt;You can see a local copy of your project by visiting to
-&lt;a href=&quot;http://localhost:8000&quot;&gt;http://localhost:8000&lt;/a&gt; with your web browser.&lt;/p&gt;
+&lt;p&gt;You can see a local copy of your project by visiting &lt;a href=&quot;http://localhost:8000&quot;&gt;http://localhost:8000&lt;/a&gt; with your web browser.&lt;/p&gt;
 
 &lt;p&gt;You should see something like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/images/deployment1.png&quot; alt=&quot;Screenshot of local server running&quot; title=&quot;Screenshot of local server running.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Arrow/public/images/deployment1.png&quot; alt=&quot;Screenshot of local server running&quot; title=&quot;Screenshot of local server running.&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;deployment&quot;&gt;Deployment&lt;/h2&gt;
+&lt;h2 id=&quot;deployment-for-the-first-time&quot;&gt;Deployment for the First Time&lt;/h2&gt;
 
 &lt;p&gt;If the website looks good and you are ready to deploy to 
 Github Pages, follow these steps.&lt;/p&gt;
@@ -82,7 +82,7 @@ from the previous repository history.&lt;/p&gt;
 
 &lt;p&gt;The previous process applies only to the first time you wish to publish.&lt;/p&gt;
 
-&lt;p&gt;For subsequent changes, simply run the &lt;code&gt;make publish&lt;/code&gt; command from the terminal.&lt;/p&gt;
+&lt;p&gt;For subsequent changes, simply run the &lt;code&gt;rake publish&lt;/code&gt; command from the terminal.&lt;/p&gt;
 
 &lt;p&gt;If all went well, you should see a message on the terminal that shows the 
 project was deployed successfully.&lt;/p&gt;
@@ -294,6 +294,6 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
       <pubDate>Wed, 04 Sep 2024 12:00:00 -0700</pubDate>
       <dc:date>2024-09-04T12:00:00-07:00</dc:date>
     </item>
-    <dc:date>2024-09-04T23:25:06-07:00</dc:date>
+    <dc:date>2024-09-04T23:44:09-07:00</dc:date>
   </channel>
 </rss>

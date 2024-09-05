@@ -14,30 +14,29 @@ and create a ready-for-deployment folder of your
 website by running the following command.
 
 ~~~sh
-$ make build
+$ rake build
 ~~~
 
 This will create a folder called `build/` in your root folder.
+Since `build` is the default task in your `Rakefile`, running
+`rake` alone will build your site,
 
-To see your site on a local server before deployment, you can 
-also run:
+To see your site on a local server before deployment, run:
 
 ~~~sh
-$ make serve
+$ rake serve
 ~~~
 
 This command will build the project and start a local server
 using Python's `http-server`, which uses port 8000 by default.
 
-You can see a local copy of your project by visiting to 
-<http://localhost:8000> with your web browser.
-
+You can see a local copy of your project by visiting <http://localhost:8000> with your web browser.
 
 You should see something like this:
 
-![Screenshot of local server running](/public/images/deployment1.png "Screenshot of local server running.")  
+![Screenshot of local server running](/Arrow/public/images/deployment1.png "Screenshot of local server running.")  
 
-## Deployment
+## Deployment for the First Time
 
 If the website looks good and you are ready to deploy to 
 Github Pages, follow these steps.
@@ -76,7 +75,7 @@ All done! Your site should now be deployed to
 
 The previous process applies only to the first time you wish to publish.
 
-For subsequent changes, simply run the `make publish` command from the terminal.
+For subsequent changes, simply run the `rake publish` command from the terminal.
 
 If all went well, you should see a message on the terminal that shows the 
 project was deployed successfully.

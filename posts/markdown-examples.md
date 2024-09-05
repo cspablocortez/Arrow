@@ -137,7 +137,7 @@ Here's a "line block":
 
 and images can be specified like so:
 
-![example image](/public/images/cat.jpg "An exemplary image")
+![example image](/public/images/deployment1.png "An exemplary image")
 
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.

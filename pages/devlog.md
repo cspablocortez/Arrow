@@ -7,12 +7,11 @@
   regarding different technologies as I work on software projects.</p>
 
   <p>This is not part of Arrow's documentation. Instead, devlogs capture 
-  the history of a project by telling a story from teh developer's perspective.</p>
+  the history of a project by telling a story from the developer's perspective.</p>
 </div>
 
 
 ## 2024-09-04
-
 
 (21:17) By default, wruby parses code blocks surrounded by tildes 
 since it relies on pandoc. I've become accustomed to the Jekyll

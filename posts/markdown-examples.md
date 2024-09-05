@@ -1,6 +1,10 @@
-# Markdown Examples in wruby
+# Markdown Examples in Arrow
 
-2024-07-20
+2024-09-04
+
+# An h1 header
+
+Arrow assumes all content will be managed through markdown files.
 
 ## An h2 header
 

@@ -5,12 +5,17 @@
 </p>
 
 Arrow is a minimal static site generator and a content management 
-system for independently managed websites, 
-favoring simplicity and readability.
+system for independent websites.
+
+It’s ideal for tech-savvy people who want to own their content but 
+don’t want to dedicate too much time to maintaining a website or blog. 
+
+
+> The focus is on writing, not website maintenance.
 
 ## Features
 
-All the features of **wruby**:
+Arrow includes ll the features of **wruby**:
 
 * Fast, OS-agnostic site generator
 * Auto-generated, valid [RSS feed](/index.rss)
@@ -20,6 +25,9 @@ All the features of **wruby**:
 Plus:
 
 * An easy-to-use CMS for writer happiness.
+* A CSS theme that favors simplicity and readability
+* Automated tasks to build and deploy site
+* Free hosting over Github Pages
 
 Learn more on the [about page](/about) or checkout the
 official Github [repository](https://github.com/cspablocortez/Arrow).

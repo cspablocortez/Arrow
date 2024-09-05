@@ -1,5 +1,13 @@
 require 'fileutils'
 
+desc "start development build"
+task :dev do 
+  FileUtils.rm_rf('build')
+  FileUtils.mkdir_p('build')
+  sh 'ruby arrow.rb'
+  sh 'open build/index.html'
+end
+
 desc "Build the project"
 task :build do
   FileUtils.rm_rf('build')
@@ -15,6 +23,7 @@ end
 desc "Clean the build directory"
 task :clean do
   FileUtils.rm_rf(Dir.glob('build/*'))
+  puts "build/ directory cleared."
 end
 
 desc "Publish to GitHub Pages"

@@ -25,7 +25,7 @@ Arrow includes all the features of **wruby**:
 Plus:
 
 * An easy-to-use CMS for writer happiness.
-* A CSS theme that favors simplicity and readability
+* A stylesheet that favors simplicity and readability
 * Automated tasks to build and deploy site
 * Free hosting over Github Pages
 

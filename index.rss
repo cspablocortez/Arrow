@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>wruby RSS Feed</title>
+    <link>https://wruby.btxx.org</link>
+    <description>The official RSS Feed for https://wruby.btxx.org</description>
+    <pubDate>Wed, 04 Sep 2024 22:36:58 -0700</pubDate>
+    <item>
+      <title>How to Deploy to Github Pages</title>
+      <link>https://wruby.btxx.org/posts/github-pages-deployment/</link>
+      <description>&lt;h1 id=&quot;how-to-deploy-to-github-pages&quot;&gt;How to Deploy to Github Pages&lt;/h1&gt;
+
+&lt;p&gt;2024-09-04&lt;/p&gt;
+
+&lt;p style=&quot;background: #ddd; padding: 1rem&quot;&gt;
+  This guide assumes you have a Github account.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-a-website-build&quot;&gt;Creating a website build&lt;/h2&gt;
+
+&lt;p&gt;Open the terminal to the project directory 
+and create a ready-for-deployment folder of your 
+website by running the following command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ make build
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will create a folder called &lt;code&gt;build/&lt;/code&gt; in your root folder.&lt;/p&gt;
+
+&lt;p&gt;To see your site on a local server before deployment, you can 
+also run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ make serve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This command will build the project and start a local server
+using Python’s &lt;code&gt;http-server&lt;/code&gt;, which uses port 8000 by default.&lt;/p&gt;
+
+&lt;p&gt;You can see a local copy of your project by visiting to
+&lt;a href=&quot;http://localhost:8000&quot;&gt;http://localhost:8000&lt;/a&gt; with your web browser.&lt;/p&gt;
+
+&lt;p&gt;You should see something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/deployment1.png&quot; alt=&quot;Screenshot of local server running&quot; title=&quot;Screenshot of local server running.&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;deployment&quot;&gt;Deployment&lt;/h2&gt;
+
+&lt;p&gt;If the website looks good and you are ready to deploy to 
+Github Pages, follow these steps.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-gh-pages-branch-in-your-project-repository&quot;&gt;Create a &lt;code&gt;gh-pages&lt;/code&gt; branch in your project repository.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git checkout --orphan gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;--orphan&lt;/code&gt; flag in the command above disconnects the newly created branch
+from the previous repository history.&lt;/p&gt;
+
+&lt;h3 id=&quot;track-the-build-folder-on-the-gh-pages-branch&quot;&gt;Track the &lt;code&gt;build&lt;/code&gt; folder on the &lt;code&gt;gh-pages&lt;/code&gt; branch.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git add -f build/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;-f&lt;/code&gt; option forces tracking even though the directory is in my &lt;code&gt;.gitignore&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h3 id=&quot;lastly-commit-and-push-changes&quot;&gt;Lastly, commit and push changes&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git commit -m &quot;Add build directory to repository&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git push origin gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All done! Your site should now be deployed to
+&lt;code&gt;https://github.com/username/repository-name&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;updating-site&quot;&gt;Updating Site&lt;/h2&gt;
+
+&lt;p&gt;The previous process applies only to the first time you wish to publish.&lt;/p&gt;
+
+&lt;p&gt;For subsequent changes, simply run the &lt;code&gt;make publish&lt;/code&gt; command from the terminal.&lt;/p&gt;
+
+&lt;p&gt;If all went well, you should see a message on the terminal that shows the 
+project was deployed successfully.&lt;/p&gt;
+
+&lt;p&gt;Wait about a minute or so for Github to update these changes on their server, and 
+you should be able to see your site at the address logged on the terminal.&lt;/p&gt;
+
+&lt;p&gt;That’s it!&lt;/p&gt;
+
+</description>
+      <pubDate>Wed, 04 Sep 2024 12:00:00 -0700</pubDate>
+      <dc:date>2024-09-04T12:00:00-07:00</dc:date>
+    </item>
+    <item>
+      <title>Markdown Examples in Arrow</title>
+      <link>https://wruby.btxx.org/posts/markdown-examples/</link>
+      <description>&lt;h1 id=&quot;markdown-examples-in-arrow&quot;&gt;Markdown Examples in Arrow&lt;/h1&gt;
+
+&lt;p&gt;2024-09-04&lt;/p&gt;
+
+&lt;h1 id=&quot;an-h1-header&quot;&gt;An h1 header&lt;/h1&gt;
+
+&lt;p&gt;Arrow assumes all content will be managed through markdown files.&lt;/p&gt;
+
+&lt;h2 id=&quot;an-h2-header&quot;&gt;An h2 header&lt;/h2&gt;
+
+&lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
+
+&lt;p&gt;2nd paragraph. &lt;em&gt;Italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, and &lt;code&gt;monospace&lt;/code&gt;. Itemized lists
+look like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;this one&lt;/li&gt;
+  &lt;li&gt;that one&lt;/li&gt;
+  &lt;li&gt;the other one&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that — not considering the asterisk — the actual text
+content starts at 4-columns in.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Block quotes are
+written like so.&lt;/p&gt;
+
+  &lt;p&gt;They can span multiple paragraphs,
+if you like.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., “it’s all
+in chapters 12–14”). Three dots … will be converted to an ellipsis.
+Unicode is supported. ☺&lt;/p&gt;
+
+&lt;h3 id=&quot;an-h3-header&quot;&gt;An h3 header&lt;/h3&gt;
+
+&lt;p&gt;Here’s a numbered list:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;first item&lt;/li&gt;
+  &lt;li&gt;second item&lt;/li&gt;
+  &lt;li&gt;third item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here’s a code sample:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;define foobar() {
+    print &quot;Welcome to flavor country!&quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(which makes copying &amp;amp; pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;an-h4-header&quot;&gt;An h4 header&lt;/h4&gt;
+
+&lt;p&gt;Now a nested list:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;First, get these ingredients:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;carrots&lt;/li&gt;
+      &lt;li&gt;celery&lt;/li&gt;
+      &lt;li&gt;lentils&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Boil some water.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dump everything in the pot and follow
+this algorithm:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;Do not bump wooden spoon or it will fall.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).&lt;/p&gt;
+
+&lt;p&gt;Here’s a link to &lt;a href=&quot;http://foo.bar&quot;&gt;a website&lt;/a&gt;, to a &lt;a href=&quot;local-doc.html&quot;&gt;local
+doc&lt;/a&gt;, and to a &lt;a href=&quot;#an-h2-header&quot;&gt;section heading in the current
+doc&lt;/a&gt;. Here’s a footnote &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tables can look like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;size&lt;/th&gt;
+      &lt;th&gt;material&lt;/th&gt;
+      &lt;th&gt;color&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;leather&lt;/td&gt;
+      &lt;td&gt;brown&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;hemp&lt;/td&gt;
+      &lt;td&gt;natural&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;11&lt;/td&gt;
+      &lt;td&gt;glass&lt;/td&gt;
+      &lt;td&gt;transparent&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Table: Shoes, their sizes, and what they’re made of.&lt;/p&gt;
+
+&lt;p&gt;A horizontal rule follows.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Here’s a definition list:&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;apples&lt;/dt&gt;
+  &lt;dd&gt;Good for making applesauce.
+oranges&lt;/dd&gt;
+  &lt;dd&gt;Citrus!
+tomatoes&lt;/dd&gt;
+  &lt;dd&gt;There’s no “e” in tomatoe.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)&lt;/p&gt;
+
+&lt;p&gt;Here’s a “line block”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Line one&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Line too&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Line tree&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;and images can be specified like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/deployment1.png&quot; alt=&quot;example image&quot; title=&quot;An exemplary image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+      <pubDate>Wed, 04 Sep 2024 12:00:00 -0700</pubDate>
+      <dc:date>2024-09-04T12:00:00-07:00</dc:date>
+    </item>
+    <dc:date>2024-09-04T22:36:58-07:00</dc:date>
+  </channel>
+</rss>

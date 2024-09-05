@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="dark light">
+	<link rel="icon" href="data:,">
+	<title>Devlog</title>
+	<link href="/index.rss" type="application/rss+xml" rel="alternate" title="RSS feed for blog posts" />
+<style>*{box-sizing:border-box;}body{font-family:sans-serif;line-height:1.33;margin:0
+auto;max-width:650px;padding:1rem;}blockquote {border-left: 2px solid #8b8b8b;padding-left: 0.5rem;}img{max-width:100%;}pre{border:1px solid;overflow:auto;padding:5px;}table{text-align:left;width:100%;}.posts,#menu{list-style:none;padding:0;}.posts li{margin-bottom:8px;}.posts li span{display:block;font-size:90%;}#menu li{display:inline-block;margin-right:8px;}.footnotes{font-size:90%;} 
+</style>
+</head>
+
+<nav id="top">
+	<a href="/">Home</a><span>&nbsp;|&nbsp;</span><a href="#menu">Menu &darr;</a>
+</nav>
+
+<main>
+
+<h1 id="devlog">Devlog</h1>
+
+<div style="background: #ddd; padding: 1rem">
+
+  <p>This is the development log (<em>devlog</em>) of Arrow. 
+  I like keeping a log of my impressions 
+  regarding different technologies as I work on software projects.</p>
+
+  <p>This is not part of Arrow's documentation. Instead, devlogs capture 
+  the history of a project by telling a story from the developer's perspective.</p>
+</div>
+
+<h2 id="section">2024-09-04</h2>
+
+<p>(21:17) By default, wruby parses code blocks surrounded by tildes 
+since it relies on pandoc. I’ve become accustomed to the Jekyll
+backticks, will return to this.</p>
+
+<hr />
+
+<p>(21:10) This page is now <a href="https://cspablocortez.github.io/Arrow/devlog">live on Github</a>.</p>
+
+<p>I’ll be going over some of the required steps I took to get this working.</p>
+
+<p><strong>First I had to create a <code>gh-pages</code> branch on my repository.</strong></p>
+
+<pre><code class="language-sh">$ git checkout --orphan gh-pages
+</code></pre>
+
+<p>The <code>--orphan</code> flag in the command above disconnects the newly created branch
+from the previous repository history.</p>
+
+<p><strong>Then I tracked the <code>build</code> folder on this branch.</strong></p>
+
+<pre><code class="language-sh">$ git add -f build/
+</code></pre>
+
+<p>The <code>-f</code> option forces tracking even though the directory is in my <code>.gitignore</code> file.</p>
+
+<p><strong>Lastly, commit and push changes</strong></p>
+
+<pre><code class="language-sh">$ git commit -m "Add build directory to repository"
+</code></pre>
+
+<pre><code class="language-sh">$ git push origin gh-pages
+</code></pre>
+
+<p>The site is currently deployed successfully. If the site is under a 
+project page, like it is for me (I’m publishing this 
+on <a href="https://cspablocortez.github.io/Arrow">https://cspablocortez.github.io/Arrow</a>), then the base url will be broken.</p>
+
+<p>Since I have a few projects currently hosted via Github Pages,
+I will have to come back to fix this.</p>
+
+<hr />
+
+<p>(20:43) I’m now preparing the site for a Github Pages deployment.</p>
+
+<hr />
+
+<p>(20:32) Linking devlog to home page.</p>
+
+<hr />
+
+<p>(20:30) I’m reading up on Github Pages deployment, currently 
+thinking of deploying
+this project off the <code>build</code> directory all from the main branch.</p>
+
+<p>This method is probably the easiest, but before I decide on it
+I want to explore a more
+secure way to serve the site over Github Pages by keeping 
+separate branches. Not currently a priority as I haven’t deployed at all.</p>
+
+</main>
+<hr/>
+<footer role="contentinfo">
+    <h2>Menu Navigation</h2>
+    <ul id="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts">Posts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/devlog">Devlog</a></li>
+        <li><a href="/index.rss">RSS</a></li>
+        <li><a href="#top">&uarr; Top of the page</a></li>
+    </ul>
+    <small>
+        Built with <a href="https://cspablocortez.github.io/Arrow">Arrow</a>. <br>
+        The <a href="https://github.com/cspablocortez/Arrow">code for this project</a>
+        is <a href="https://mit-license.org">MIT</a>.
+    </small>
+</footer>

@@ -1,13 +1,13 @@
 # Arrow
 
-<p style="background: #ddd; padding: 0.5rem">
+<p style="background: #ddd; padding: 1rem; text-align: center;">
   <em>Arrow is currently in development and should not be used in production environments.</em>
 </p>
 
 Arrow is a minimal static site generator and a content management 
 system for independent websites.
 
-It’s ideal for tech-savvy people who want to own their content but 
+It’s ideal for people who want to own their content but 
 don’t want to dedicate too much time to maintaining a website or blog. 
 
 
@@ -15,7 +15,7 @@ don’t want to dedicate too much time to maintaining a website or blog.
 
 ## Features
 
-Arrow includes ll the features of **wruby**:
+Arrow includes all the features of **wruby**:
 
 * Fast, OS-agnostic site generator
 * Auto-generated, valid [RSS feed](/index.rss)

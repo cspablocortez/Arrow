@@ -12,7 +12,7 @@ clean:
 
 publish: 
 	git switch gh-pages
-	find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
+	find . -mindepth 1 -maxdepth 1 ! -name ".git" ! -name "build" -exec rm -rf {} +
 	cp -r build/* .
 	rm -r build
 	git add .

@@ -12,6 +12,9 @@
 
 ## 2024-09-05
 
+(08:04) Should disable posts since links are currently 
+broken.
+
 (07:49) Can't forget to add support for other github pages
 projects. That way it's easy to spin more Arrow-built 
 projects.

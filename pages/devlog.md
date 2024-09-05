@@ -10,6 +10,19 @@
   the history of a project by telling a story from the developer's perspective.</p>
 </div>
 
+## 2024-09-05
+
+(07:23) Not necessarily *coding*, but I spent the past hours writing a blog post
+about wruby and the shortcomings of Jekyll. Arrow needs to be as simple a website
+as possible while introducing a newcomer to the indieweb to important concepts,
+from beginning web development in HTML and CSS to generating RSS feeds.
+
+It won't provide configuration beyond metadata, but it will be readily configurable
+by nature, since it will be mostly static files.
+
+- external CSS file
+- minimal yet opinionanted HTML structure
+- CMS that prioritizes writing over file tinkering
 
 ## 2024-09-04
 

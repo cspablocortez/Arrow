@@ -2,6 +2,8 @@
 
 2024-09-04
 
+[20:43] I'm now preparing the site for a Github Pages deployment.
+
 [20:32] Linking devlog to home page.
 
 [20:30] I'm reading up on Github Pages deployment, currently deploying

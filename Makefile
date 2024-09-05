@@ -1,3 +1,5 @@
+.PHONY: build clean serve publish
+
 build:
 	rm -rf build && mkdir build
 	ruby wruby.rb 
@@ -8,4 +10,13 @@ serve: build
 clean:
 	rm -rf build/*
 
-.PHONY: build clean
+publish: build
+	git checkout gh-pages
+	mv build/* .
+	git add .
+	git commit -m "Automated deployment"
+	git push origin gh-pages
+	git switch main
+
+
+

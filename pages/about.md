@@ -1,12 +1,27 @@
-# About
+# About Arrow
 
-wruby is a minimal blog generator written in Ruby.
+<p style="background: #ddd; padding: 0.5rem">
+  The following page is under construction.
+</p>
 
-## Why?
 
-This project was created by me, [Bradley Taunt](https://btxx.org), out of frustration with overly complex and bloated blogging options. I tried so many "minimal" generators but each one ended up having some glaring issue or heavy reliance on dependencies.
+Arrow is a minimal static site generator and a content management 
+system for independently managed websites, 
+favoring simplicity and readability.
 
-Originally, I solved this problem by creating [barf](https://barf.btxx.org) - a blog generator pieced together with basic shell scripting. While this project works well, I prefer to write with Ruby since it is such a beautiful language.
+It's ideal for people who want to own their content 
+but don't want to dedicate too much time to maintaining
+a website. The focus is writing, not website maintenance.
 
-So, wruby was born. There isn't much else to say. I hope you enjoy using it and
-be sure to report any issues if you come arcoss any bugs!
+Arrow assumes familiarity with markdown and the terminal.
+The basic workflow of publishing content on an Arrow website 
+consists of creating markdown files, editing them with a 
+text editor, and publishing from the terminal.
+
+<!-- Include diagram of workflow -->
+
+<small>
+As of September 4, 2024, Arrow's codebase relies considerably 
+on Bradley Taunt's [wruby](https://git.sr.ht/~bt/wruby), which 
+is distributed under the MIT License. 
+</small>

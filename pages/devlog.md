@@ -13,6 +13,8 @@
 
 ## 2024-09-04
 
+(22:57) I'm working on setting up the sub url.
+
 (21:17) By default, wruby parses code blocks surrounded by tildes 
 since it relies on pandoc. I've become accustomed to the Jekyll
 backticks, will return to this.

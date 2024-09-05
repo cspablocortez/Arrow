@@ -29,7 +29,7 @@ Plus:
 * Automated tasks to build and deploy site
 * Free hosting over Github Pages
 
-Learn more on the [about page](/about) or checkout the
+Learn more on the [about page](https://cspablocortez.github.io/Arrow/about) or checkout the
 official Github [repository](https://github.com/cspablocortez/Arrow).
 
 ## Latest Posts

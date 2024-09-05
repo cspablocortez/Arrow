@@ -13,7 +13,10 @@
 
 ## 2024-09-04
 
-(22:57) I'm working on setting up the sub url.
+(23:27) I have finished adding support for publishing with `make publish`.
+I'm thinki
+
+(22:57) I'm working on setting up the sub url -- This still needs fixing.
 
 (21:17) By default, wruby parses code blocks surrounded by tildes 
 since it relies on pandoc. I've become accustomed to the Jekyll

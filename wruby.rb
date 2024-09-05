@@ -1,7 +1,7 @@
 require 'bundler/inline'
 gemfile do
   gem 'kramdown', '2.4.0'
-  gem 'rss', '0.3.0'
+  gem 'rss', '0.3.1'
 end
 
 require 'kramdown'
